@@ -45,7 +45,7 @@ jobs:
 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          # Additional MegaLinter custom variables to be places here.
+          # Additional MegaLinter custom variables to be placed here.
 
       # Upload MegaLinter artifacts
       - name: Archive production artifacts
