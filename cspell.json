@@ -1,0 +1,58 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    // Add project-specific or technical terms that are not in the default dictionary
+    "MegaLinter",
+    "Dependabot",
+    "GitHub",
+    "TypeScript",
+    "JavaScript"
+  ],
+  "flagWords": [
+    // Words that are always considered incorrect and should be flagged
+    "teh",
+    "adress",
+    "recieve",
+    "acommodate"
+  ],
+  "ignoreWords": [
+    // Words to ignore during spell checking
+    "mkdirp",
+    "codecov",
+    "npm",
+    "yarn",
+    "stefanzweifel"
+  ],
+  "ignorePaths": [
+    // Files and directories to exclude from spell checking
+    "node_modules/**",
+    "dist/**",
+    ".git/**",
+    "build/**",
+    "coverage/**"
+  ],
+  "ignoreRegExpList": [
+    // Regular expressions for sections of text to ignore
+    "/http[s]?:\\/\\/[\\w\\.\\-]+/",
+    "SHA-256: [A-Fa-f0-9]{64}"
+  ],
+  "overrides": [
+    // Specify different settings for specific file paths or patterns
+    {
+      "filename": "**/*.md",
+      "ignoreWords": [
+        // Words to ignore specifically in Markdown files
+        "frontmatter",
+        "markdownlint"
+      ]
+    },
+    {
+      "filename": "**/*.ts",
+      "ignoreRegExpList": [
+        // TypeScript-specific ignores, like type assertions or decorators
+        "/@\\w+/"
+      ]
+    }
+  ]
+}
