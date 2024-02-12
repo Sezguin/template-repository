@@ -33,7 +33,7 @@ jobs:
       # MegaLinter
       - name: MegaLinter
 
-        # More MegaLinter flavours -> https://megalinter.io/flavors/
+        # More MegaLinter flavours -> https://megalinter.io/latest/flavors/
         uses: oxsecurity/megalinter@190cd0dad6dc52b2de5b810e3b290c3d6bdcc0f2 # v7.9.0
         id: ml
         env:
