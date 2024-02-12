@@ -10,7 +10,8 @@
     ".git/**",
     "build/**",
     "coverage/**",
-    "cspell.json"
+    "cspell.json",
+    ".gitignore"
   ],
   "ignoreRegExpList": [
     "/http[s]?:\\/\\/[\\w\\.\\-]+/",
