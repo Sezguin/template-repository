@@ -3,7 +3,14 @@
   "language": "en",
   "words": ["MegaLinter", "Dependabot", "GitHub", "TypeScript", "JavaScript"],
   "flagWords": ["teh", "adress", "recieve", "acommodate"],
-  "ignoreWords": ["mkdirp", "codecov", "npm", "yarn", "stefanzweifel"],
+  "ignoreWords": [
+    "mkdirp",
+    "codecov",
+    "npm",
+    "yarn",
+    "stefanzweifel",
+    "gubbins"
+  ],
   "ignorePaths": [
     "node_modules/**",
     "dist/**",
