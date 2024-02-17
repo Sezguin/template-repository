@@ -28,6 +28,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+       workflows: write
 
     steps:
       - name: Checkout Code
@@ -115,9 +116,6 @@ jobs:
 
       - name: Commit and push applied linter fixes
         uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d # v5.0.0
-        permissions:
-          contents: write
-          workflows: write
         if: env.APPLY_FIXES_IF_COMMIT == 'true'
         with:
           branch: >-
