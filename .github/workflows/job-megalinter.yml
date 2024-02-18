@@ -13,7 +13,7 @@ env:
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
-  
+
 permissions: read-all
 
 jobs:
