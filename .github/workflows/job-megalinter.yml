@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - main
-  push:
-    branches:
-      - main
 
 env:
   APPLY_FIXES: all
@@ -16,7 +13,7 @@ env:
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
-  
+
 permissions: read-all
 
 jobs:
@@ -28,13 +25,12 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-      workflows: write
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
-          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MEGALINTER_PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       # MegaLinter
@@ -98,7 +94,7 @@ jobs:
         id: cpr
         if: env.APPLY_FIXES_IF_PR == 'true'
         with:
-          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MEGALINTER_PAT || secrets.GITHUB_TOKEN }}
           commit-message: "[MegaLinter] Apply linters automatic fixes"
           title: "[MegaLinter] Apply linters automatic fixes"
           labels: bot
