@@ -1,7 +1,14 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["MegaLinter", "Dependabot", "GitHub", "TypeScript", "JavaScript"],
+  "words": [
+    "Dependabot",
+    "GitHub",
+    "JavaScript",
+    "MegaLinter",
+    "Trufflehog",
+    "TypeScript"
+  ],
   "flagWords": ["teh", "adress", "recieve", "acommodate"],
   "ignoreWords": [
     "mkdirp",
