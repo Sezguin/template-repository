@@ -1,8 +1,20 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["MegaLinter", "Dependabot", "GitHub", "TypeScript", "JavaScript"],
-  "flagWords": ["teh", "adress", "recieve", "acommodate"],
+  "words": [
+    "Dependabot",
+    "GitHub",
+    "JavaScript",
+    "MegaLinter",
+    "Trufflehog",
+    "TypeScript"
+  ],
+  "flagWords": [
+    "teh",
+    "adress",
+    "recieve",
+    "acommodate"
+  ],
   "ignoreWords": [
     "mkdirp",
     "codecov",
@@ -27,11 +39,16 @@
   "overrides": [
     {
       "filename": "**/*.md",
-      "ignoreWords": ["frontmatter", "markdownlint"]
+      "ignoreWords": [
+        "frontmatter",
+        "markdownlint"
+      ]
     },
     {
       "filename": "**/*.ts",
-      "ignoreRegExpList": ["/@\\w+/"]
+      "ignoreRegExpList": [
+        "/@\\w+/"
+      ]
     }
   ]
 }
