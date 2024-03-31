@@ -1,0 +1,2 @@
+# Ignoring the .git/config file, as this is flagged as a false positive by Trufflehog. No truffles here I'm afraid.
+.git/config
