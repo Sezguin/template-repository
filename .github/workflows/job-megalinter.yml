@@ -51,7 +51,7 @@ jobs:
             }}
 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DISABLE_LINTERS: TRUFFLEHOG
+          DISABLE_LINTERS: REPOSITORY_TRUFFLEHOG
 
           # Additional MegaLinter custom variables to be placed here.
 
