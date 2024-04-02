@@ -6,10 +6,16 @@
     "GitHub",
     "JavaScript",
     "MegaLinter",
+    "Sezguin",
     "Trufflehog",
     "TypeScript"
   ],
-  "flagWords": ["teh", "adress", "recieve", "acommodate"],
+  "flagWords": [
+    "teh",
+    "adress",
+    "recieve",
+    "acommodate"
+  ],
   "ignoreWords": [
     "mkdirp",
     "codecov",
@@ -34,11 +40,16 @@
   "overrides": [
     {
       "filename": "**/*.md",
-      "ignoreWords": ["frontmatter", "markdownlint"]
+      "ignoreWords": [
+        "frontmatter",
+        "markdownlint"
+      ]
     },
     {
       "filename": "**/*.ts",
-      "ignoreRegExpList": ["/@\\w+/"]
+      "ignoreRegExpList": [
+        "/@\\w+/"
+      ]
     }
   ]
 }
