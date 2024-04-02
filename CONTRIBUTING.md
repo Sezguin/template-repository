@@ -29,4 +29,4 @@ First off, cheers for considering contributing to this template-repository. Just
 - The core team looks at Pull Requests on a regular basis.
 - After feedback has been given we expect responses within two weeks. After two weeks we may close the pull request if it isn't showing any activity.
 
-## Thank you for your contribution!
+## Thank you for your contribution
