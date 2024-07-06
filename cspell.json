@@ -17,7 +17,11 @@
     "npm",
     "yarn",
     "stefanzweifel",
-    "gubbins"
+    "gubbins",
+    "organisation",
+    "customisation",
+    "nextjs",
+    "customise"
   ],
   "ignorePaths": [
     "node_modules/**",
